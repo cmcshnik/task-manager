@@ -1,16 +1,7 @@
-# HW-3: exec-graph
+(Краткое описание задания)[https://github.com/cmcshnik/task-manager/blob/main/hw-3.pdf]
 
-### Requirements
-* gcc (`-std=gnu11`)
-* make
-* check
-* gcovr
-* clang-tidy
-* valgrind
+Требовалось реализовать программу, считавающую из файла конфига задачи, каждая из которых выполняет в консоли либо команду sleep, либо exec, и запустить их. 
 
-### Links
-* [Check: unit testing framework for C](https://libcheck.github.io/check/doc/check_html/check_toc.html)
-* [gcovr](https://gcovr.com/en/5.1/manpage.html)
-* [Makefile tutorial](https://makefiletutorial.com/)
-* [GNU make](https://www.gnu.org/software/make/manual/make.html)
-* [man stat](https://linux.die.net/man/2/stat)
+Задачи (таски) могут иметь зависимость друг от друга, что делает возможной ситуацию циклической зависимости (таск1 -> таск2 -> таск1). Для обнаружения подобной ситуации строится граф зависимостей, который обходится в ширину. Кроме того, конфиг может содержать некорректные поля, это также требуется обрабатывать. Также для выполнения задания были написаны свои структуры данных: очередь, вектор, хэш-таблица. Реализован графический вывод текущего состояния в консоль с помощью pthread
+
+![image](https://github.com/user-attachments/assets/dd9cf8ad-5b17-4a88-8e3f-b33f3014a4bc)
