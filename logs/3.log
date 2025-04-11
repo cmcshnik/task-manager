@@ -1,0 +1,15 @@
+Executing commands
+=== Task output to stdin ===
+binary
+buffer.txt
+build
+configs
+hw-3.pdf
+logs
+main.c
+Makefile
+README.md
+src
+tests
+=== End of task output to stdin ===
+Proccess ended normally with code 0
