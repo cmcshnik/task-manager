@@ -1,4 +1,4 @@
-(Краткое описание задания)[https://github.com/cmcshnik/task-manager/blob/main/hw-3.pdf]
+[Краткое описание задания](https://github.com/cmcshnik/task-manager/blob/main/hw-3.pdf)
 
 Требовалось реализовать программу, считавающую из файла конфига задачи, каждая из которых выполняет в консоли либо команду sleep, либо exec, и запустить их. 
 
